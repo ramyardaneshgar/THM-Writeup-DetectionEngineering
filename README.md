@@ -1,4 +1,4 @@
-# DetectionEngineering
+e# DetectionEngineering
 Detection Engineering - identifying suspicious PowerShell activity using Palantir’s Alerting and Detection Strategy (ADS) Framework.
 
 By Ramyar Daneshgar 
@@ -10,7 +10,7 @@ In this lab, I developed a detection strategy for identifying suspicious PowerSh
 
 ### **Objective**
 
-detect when PowerShell is loaded into non-native host processes (i.e., not `powershell.exe`). Attackers use this method to blend malicious activity into legitimate processes, making it harder to spot. For example, loading PowerShell into `notepad.exe` or `svchost.exe` allows them to execute commands without raising immediate suspicion.
+detect when PowerShell is loaded into non-native host processes (not `powershell.exe`). Attackers use this method to blend malicious activity into legitimate processes, making it harder to spot. For example, loading PowerShell into `notepad.exe` or `svchost.exe` allows them to execute commands without raising immediate suspicion.
 
 This tactic falls under the **Execution** category in the **MITRE ATT&CK framework**, specifically **T1059.001: PowerShell**. The idea was to identify this behavior early and trigger actionable alerts.
 
